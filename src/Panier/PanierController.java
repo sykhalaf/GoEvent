@@ -180,7 +180,7 @@ public class PanierController implements Initializable {
     
     private void setChosenFruit(Panier p) {
         fruitNameLable.setText(p.getNom_event());
-        fruitPriceLabel.setText(p.getPrix() + Run.CURRENCY);
+        fruitPriceLabel.setText(p.getPrix() + "TND");
         quantite.setText(String.valueOf(p.getPrix()));
         String path;
 //        txtimage.setText(fruit.getImage());

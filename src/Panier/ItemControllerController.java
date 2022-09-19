@@ -44,7 +44,7 @@ public class ItemControllerController {
         this.p = p;
         this.myListener = myListener;
         nameLabel.setText(p.getNom_event());
-        priceLable.setText(p.getPrix() + Run.CURRENCY);
+        priceLable.setText(p.getPrix() + "TND");
         quantite.setText(String.valueOf(p.getStock_ticket()));
 //        String path = fruit.getImage();
 //        Image aa = new Image("file:" + path);

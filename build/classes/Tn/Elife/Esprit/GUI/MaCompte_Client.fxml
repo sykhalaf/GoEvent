@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="806.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="Tn.Elife.Esprit.GUI.MaCompte_ClientController">
+   <children>
+      <Pane prefHeight="423.0" prefWidth="154.0" style="-fx-background-color: #94eecc;">
+         <children>
+            <VBox layoutY="97.0" prefHeight="262.0" prefWidth="154.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btncompte" mnemonicParsing="false" onAction="#compte" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Mon Compte" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnevenement" mnemonicParsing="false" onAction="#lienevenement" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text=" Evenements" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnservice" mnemonicParsing="false" onAction="#lienservice" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Services" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnquiz" mnemonicParsing="false" onAction="#lienquiz" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Quiz" textFill="#fffefe">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnavis" mnemonicParsing="false" onAction="#lienavis" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Avis" textFill="#fffefe">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <VBox layoutY="102.0" prefHeight="262.0" prefWidth="154.0" spacing="15.0">
+         <children>
+            <Button fx:id="btncompte" mnemonicParsing="false" onAction="#compte" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Mon Compte" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnevenement" mnemonicParsing="false" onAction="#lienevenement" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text=" Evenements" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnservice" mnemonicParsing="false" onAction="#lienservice" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Services" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnquiz" mnemonicParsing="false" onAction="#lienquiz" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Quiz" textFill="#fffefe">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnavis" mnemonicParsing="false" onAction="#lienavis" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Avis" textFill="#fffefe">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="176.0" layoutY="19.0" prefHeight="51.0" prefWidth="223.0" text="Bienvenue !!">
+         <font>
+            <Font name="Times New Roman" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="21.0" fitWidth="855.0" layoutX="154.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/footer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="961.0" layoutY="20.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-computer-icons-portable-network-graphics-abmeldung-5be2d83adb1d35.9980347215415931468975.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img" fitHeight="35.0" fitWidth="70.0" layoutX="899.0" layoutY="20.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/png-clipart-arrow-computer-icons-return-angle-text.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="176.0" layoutY="125.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <Label text="Nom :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Prenom :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="E-mail :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Password :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Téléphone :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TableView fx:id="tvcompte" layoutX="466.0" layoutY="85.0" onMouseClicked="#getSelect" prefHeight="200.0" prefWidth="511.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="32.0" text="Id" />
+            <TableColumn fx:id="colnom" prefWidth="60.0" text="Nom" />
+            <TableColumn fx:id="colprenom" prefWidth="65.0" text="Prenom" />
+            <TableColumn fx:id="colmail" prefWidth="102.0" text="E-mail" />
+            <TableColumn fx:id="colpwd" prefWidth="66.0" text="Password" />
+            <TableColumn fx:id="coltel" prefWidth="58.0" text="Tel" />
+            <TableColumn fx:id="colrole" prefWidth="59.0" text="role" />
+            <TableColumn fx:id="colimage" prefWidth="68.0" text="Image" />
+         </columns>
+      </TableView>
+      <VBox layoutX="276.0" layoutY="125.0" prefHeight="174.0" prefWidth="149.0" spacing="12.0">
+         <children>
+            <TextField fx:id="tfnom" />
+            <TextField fx:id="tfprenom" />
+            <TextField fx:id="tfmail" prefHeight="25.0" prefWidth="146.0" />
+            <TextField fx:id="tfpwd" />
+            <TextField fx:id="tftel" />
+         </children>
+      </VBox>
+      <Button fx:id="btnupdate" layoutX="551.0" layoutY="341.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #08bf3c;" text="Modifier" textFill="#1e1e1e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btndelete" layoutX="657.0" layoutY="341.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #e80f0f;" text="Supprimer" textFill="#111111">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnannuler" layoutX="769.0" layoutY="341.0" mnemonicParsing="false" onAction="#annuler" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: #e8b428;" text="Annuler" textFill="#030303">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfimage" layoutX="165.0" layoutY="90.0" prefHeight="25.0" prefWidth="122.0" visible="false" />
+      <TextField fx:id="tfrole" layoutX="260.0" layoutY="331.0" visible="false" />
+      <TextField fx:id="tfid" layoutX="582.0" layoutY="53.0" visible="false" />
+   </children>
+</AnchorPane>

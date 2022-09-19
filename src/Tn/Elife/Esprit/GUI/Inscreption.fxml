@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tn.Elife.Esprit.GUI.InscreptionController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="74.0" prefWidth="409.0" style="-fx-background-color: #31cc9c;">
+         <children>
+            <Label layoutX="130.0" layoutY="19.0" text="Inscreption" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="58.0" layoutY="108.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <Label text="Nom :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Prenom :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="E-mail :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Password :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Téléphone :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="208.0" layoutY="112.0" prefHeight="187.0" prefWidth="151.0" spacing="17.0">
+         <children>
+            <TextField fx:id="tfnom" />
+            <TextField fx:id="tfprenom" />
+            <TextField fx:id="tfemail" />
+            <PasswordField fx:id="tfpwd" />
+            <TextField fx:id="tftel" />
+         </children>
+      </VBox>
+      <Button fx:id="btnadd" layoutX="139.0" layoutY="422.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #08bf3c;" text="S'inscrire">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnannuler" layoutX="232.0" layoutY="422.0" mnemonicParsing="false" onAction="#annuler" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: #ff0202;" text="Annuler" textFill="#030303">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="checclient" layoutX="92.0" layoutY="354.0" mnemonicParsing="false" text="Client">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checentrepreneur" layoutX="226.0" layoutY="354.0" mnemonicParsing="false" text="Entrepreneur">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnannuler1" layoutX="320.0" layoutY="422.0" mnemonicParsing="false" onAction="#retour" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: #f8c808;" text="Retour" textFill="#030303">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

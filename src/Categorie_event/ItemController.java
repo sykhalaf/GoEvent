@@ -33,7 +33,7 @@ public class ItemController {
         this.e = e;
         this.myListener = myListener;
         nameLabel.setText(e.getNom_event());
-        priceLable.setText(e.getPrix() + Run.CURRENCY);
+        priceLable.setText(e.getPrix() + "TND");
 
     }
 }

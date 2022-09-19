@@ -174,7 +174,7 @@ public class CategorieController implements Initializable {
 
     private void setChosenFruit(Event e) {
         fruitNameLable.setText(e.getNom_event());
-        fruitPriceLabel.setText(e.getPrix() + Run.CURRENCY);
+        fruitPriceLabel.setText(e.getPrix() + "TND");
         quantite.setText(String.valueOf(e.getStock_ticket()));
         String path;
         // txtimage.setText(fruit.getImage());
