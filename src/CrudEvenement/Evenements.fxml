@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CrudEvenement.EvenementsController">
+   <children>
+      <VBox layoutX="36.0" layoutY="138.0" prefHeight="181.0" prefWidth="149.0">
+         <children>
+            <Button fx:id="btnOverview" mnemonicParsing="false" onAction="#Acceuil" prefHeight="70.0" prefWidth="149.0" text="Acceuil" />
+            <Button fx:id="btnOrders" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Event" prefHeight="70.0" prefWidth="149.0" text="Evenements" />
+            <Button fx:id="btnCustomers" layoutX="10.0" layoutY="44.0" mnemonicParsing="false" onAction="#Categories" prefHeight="65.0" prefWidth="149.0" text="Categories" />
+            <Button fx:id="btnSettings1" layoutX="10.0" layoutY="78.0" mnemonicParsing="false" onAction="#Contact" prefHeight="58.0" prefWidth="149.0" text="Contact" />
+         </children>
+      </VBox>
+      <Button fx:id="btnOverview" layoutX="385.0" layoutY="338.0" mnemonicParsing="false" text="refresh" />
+      <TableView fx:id="eventTable" layoutX="321.0" layoutY="144.0" prefHeight="150.0" prefWidth="244.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nomCol" prefWidth="168.0" text="nom" />
+        </columns>
+      </TableView>
+      <StackPane layoutX="188.0" prefHeight="400.0" prefWidth="411.0">
+         <children>
+            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOverview" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="pnlOrders" layoutX="8.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" />
+                  <ComboBox fx:id="rechercher" layoutX="39.0" layoutY="53.0" prefHeight="25.0" prefWidth="337.0" promptText="chercher" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
