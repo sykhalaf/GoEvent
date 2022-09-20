@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="Tn.Elife.Esprit.GUI.Evenement_AdminController">
+   <children>
+      <Label layoutX="176.0" layoutY="19.0" prefHeight="51.0" prefWidth="223.0" text="Evenement">
+         <font>
+            <Font name="Times New Roman" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="21.0" fitWidth="855.0" layoutX="160.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/footer.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-3.0" prefHeight="474.0" prefWidth="163.0" style="-fx-background-color: #f26303;">
+         <children>
+            <VBox layoutY="97.0" prefHeight="262.0" prefWidth="163.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btncompte" mnemonicParsing="false" onAction="#compte" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: #e8b428;" text="Mon Compte" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnuser" mnemonicParsing="false" onAction="#lienuser" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: #e8b428;" text="Utilisateurs" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnservices" mnemonicParsing="false" onAction="#lienservices" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: #e8b428;" text="Services" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnevenement" mnemonicParsing="false" onAction="#lienevenement" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #e8b428;" text="Evenements" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnquiz" mnemonicParsing="false" onAction="#lienquiz" prefHeight="32.0" prefWidth="169.0" style="-fx-background-color: #e8b428;" text="Quiz" textFill="#fffefe">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnavis" mnemonicParsing="false" onAction="#lienavis" prefHeight="32.0" prefWidth="166.0" style="-fx-background-color: #e8b428;" text="Avis" textFill="#fffefe">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="223.0" layoutY="142.0" style="-fx-background-color: #10000;" text="Nom" />
+      <Label layoutX="217.0" layoutY="169.0" text="Lieu" />
+      <Label layoutX="197.0" layoutY="209.0" text="Description" />
+      <Label layoutX="184.0" layoutY="288.0" text="Stock-ticket" />
+      <Label layoutX="218.0" layoutY="242.0" text="Prix" />
+      <Label layoutX="215.0" layoutY="327.0" text="Date" />
+      <Label layoutX="201.0" layoutY="382.0" text="Type" />
+      <TextField fx:id="txtnom" layoutX="273.0" layoutY="125.0" />
+      <TextField fx:id="txtlieu" layoutX="273.0" layoutY="165.0" />
+      <TextField fx:id="txtdescription" layoutX="273.0" layoutY="205.0" />
+      <TextField fx:id="txtprix" layoutX="273.0" layoutY="238.0" />
+      <TextField fx:id="txtstockticket" layoutX="272.0" layoutY="284.0" />
+      <TextField fx:id="txttype" layoutX="272.0" layoutY="370.0" />
+      <DatePicker fx:id="txtdate" editable="false" layoutX="273.0" layoutY="323.0" prefHeight="25.0" prefWidth="149.0" promptText="txtdate">
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+      </DatePicker>
+      <TextField fx:id="txtid" layoutX="223.0" layoutY="95.0" />
+      <Label layoutX="189.0" layoutY="418.0" text="catégorie" />
+      <ComboBox fx:id="categorie" layoutX="272.0" layoutY="423.0" prefWidth="150.0" />
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="980.0" layoutY="19.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-computer-icons-portable-network-graphics-abmeldung-5be2d83adb1d35.9980347215415931468975.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img" fitHeight="35.0" fitWidth="70.0" layoutX="899.0" layoutY="20.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/png-clipart-arrow-computer-icons-return-angle-text.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="colEvent" layoutX="421.0" layoutY="99.0" onMouseClicked="#getSelected" prefHeight="236.0" prefWidth="602.0" style="-fx-background-color: #ffffff;">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="60.0" text="id" />
+            <TableColumn fx:id="colnom" prefWidth="69.0" text="nom" />
+            <TableColumn fx:id="collieu" prefWidth="66.0" text="lieu" />
+            <TableColumn fx:id="coldescription" prefWidth="79.0" text="description" />
+            <TableColumn fx:id="colprix" prefWidth="71.0" text="prix" />
+            <TableColumn fx:id="colstockticket" prefWidth="67.0" text="stock_ticket" />
+            <TableColumn fx:id="coldate" prefWidth="58.0" text="date" />
+            <TableColumn fx:id="coltype" prefWidth="64.0" text="type" />
+            <TableColumn fx:id="colidcatégorie" prefWidth="64.0" text="id-catégorie" />
+         </columns>
+      </TableView>
+      <Button layoutX="686.0" layoutY="382.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #3ce829;" text="Ajouter" textFill="WHITE" />
+      <Button layoutX="794.0" layoutY="382.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #f2ad0f;" text="Modifier" textFill="WHITE" />
+      <Button layoutX="925.0" layoutY="378.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #ee3535;" text="Supprimer" textFill="WHITE" />
+      <Button layoutX="827.0" layoutY="433.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #404040;" text="Reset" textFill="WHITE" />
+   </children>
+</AnchorPane>

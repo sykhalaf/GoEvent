@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tn.Elife.Esprit.GUI.Bienvenue_ClientController">
+   <children>
+      <Label fx:id="labnom" layoutX="281.0" layoutY="206.0" text="Label">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbprenom" layoutX="353.0" layoutY="206.0" text="Label">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="418.0" prefWidth="154.0" style="-fx-background-color: #94eecc;">
+         <children>
+            <VBox layoutY="97.0" prefHeight="262.0" prefWidth="154.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btncompte" mnemonicParsing="false" onAction="#compte" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Mon Compte" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnevenement" mnemonicParsing="false" onAction="#lienevenement" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text=" Evenements" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnservice" mnemonicParsing="false" onAction="#lienservice" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Services" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnquiz" mnemonicParsing="false" onAction="#lienquiz" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Quiz" textFill="#fffefe">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnavis" mnemonicParsing="false" onAction="#lienavis" prefHeight="47.0" prefWidth="154.0" style="-fx-background-color: #da52e4;" text="Avis" textFill="#fffefe">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="169.0" layoutY="31.0" prefHeight="51.0" prefWidth="223.0" text="Bienvenue !!">
+         <font>
+            <Font name="Times New Roman" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="10.0" fitWidth="424.0" layoutX="154.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/footer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="556.0" layoutY="24.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-computer-icons-portable-network-graphics-abmeldung-5be2d83adb1d35.9980347215415931468975.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img" fitHeight="35.0" fitWidth="70.0" layoutX="470.0" layoutY="25.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/png-clipart-arrow-computer-icons-return-angle-text.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
