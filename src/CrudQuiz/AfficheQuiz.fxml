@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CrudQuiz.AfficheQuizController">
+   <children>
+      <Label layoutX="91.0" layoutY="168.0" text="id" />
+      <Label layoutX="71.0" layoutY="211.0" text="titre_quiz" />
+      <Label layoutX="74.0" layoutY="268.0" text="option1" />
+      <Label layoutX="74.0" layoutY="323.0" text="option2" />
+      <Label layoutX="76.0" layoutY="380.0" prefHeight="17.0" prefWidth="80.0" text="option3" />
+      <TextField fx:id="txtid" layoutX="151.0" layoutY="164.0" />
+      <TextField fx:id="txtoption1" layoutX="151.0" layoutY="256.0" />
+      <TextField fx:id="txtoption2" layoutX="151.0" layoutY="319.0" />
+      <TextField fx:id="txtoption3" layoutX="151.0" layoutY="376.0" />
+      <TextField fx:id="txttitre" layoutX="151.0" layoutY="207.0" />
+      <TableView fx:id="tvquiz" layoutX="354.0" layoutY="147.0" onMouseClicked="#getselected" prefHeight="328.0" prefWidth="469.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="coltitre" prefWidth="75.0" text="titre_quiz" />
+            <TableColumn fx:id="coloption1" prefWidth="75.0" text="option1" />
+            <TableColumn fx:id="coloption2" prefWidth="75.0" text="option2" />
+            <TableColumn fx:id="coloption3" prefWidth="75.0" text="option3" />
+            <TableColumn fx:id="colboonereponse" prefWidth="93.0" text="bonne_reponse" />
+         </columns>
+      </TableView>
+      <Label layoutX="44.0" layoutY="429.0" prefHeight="17.0" prefWidth="103.0" text="bonne_reponse" />
+      <TextField fx:id="txtbonnereponse" layoutX="147.0" layoutY="425.0" />
+      <Button layoutX="70.0" layoutY="572.0" mnemonicParsing="false" onAction="#ajouter" text="ADD" />
+      <Button layoutX="174.0" layoutY="558.0" mnemonicParsing="false" onAction="#DeleteQuiz" text="supprimer" />
+      <Button layoutX="360.0" layoutY="560.0" mnemonicParsing="false" onAction="#UpdateQuiz" text="modifier" />
+   </children>
+</AnchorPane>
